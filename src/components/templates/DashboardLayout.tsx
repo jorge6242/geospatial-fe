@@ -29,7 +29,7 @@ export function DashboardLayout({ children, pageTitle = "Dashboard", breadcrumbs
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   /**
-   * Handler para cerrar sesión
+   * Handler for logging out  
    */
   const handleLogout = () => {
     logout();
@@ -87,7 +87,7 @@ export function DashboardLayout({ children, pageTitle = "Dashboard", breadcrumbs
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             }
-            label="Mapas"
+            label="Maps"
             active={pathname === '/dashboard/maps'}
             collapsed={!sidebarOpen}
             onClick={() => navigateToSection('/dashboard/maps')}
@@ -101,7 +101,7 @@ export function DashboardLayout({ children, pageTitle = "Dashboard", breadcrumbs
             <div className={cn("flex items-center", sidebarOpen ? "space-x-3" : "justify-center")}>
               <img
                 src={user.avatar || getAvatarFallback(user.name, user.email)}
-                alt={`Avatar de ${user.name || user.email}`}
+                alt={`Avatar of ${user.name || user.email}`}
                 className="w-8 h-8 rounded-full"
               />
               {sidebarOpen && (

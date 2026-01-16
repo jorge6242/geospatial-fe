@@ -94,7 +94,7 @@ export default function MapsPage() {
 
   return (
     <DashboardLayout 
-      pageTitle="Mapas Forestales"
+      pageTitle="Forest Maps"
       breadcrumbs={breadcrumbs}
     >
       <div className="h-[calc(100vh-8rem)] flex">
