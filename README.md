@@ -2,6 +2,12 @@
 
 A modern geospatial web application for visualizing French forest data using Next.js, React, and Mapbox GL JS.
 
+
+
+https://github.com/user-attachments/assets/c3a997de-34e4-437c-9635-1e0179b2bbce
+
+
+
 ## 🚀 Features
 
 - **Interactive Maps**: Powered by Mapbox GL JS with smooth navigation and zoom controls
